@@ -1,7 +1,127 @@
 @charset "UTF-8";
 
-/* 
+/*
+typical devide breakpoints
+Pequenas telas: ate 600px
+Celular: de 600px ate 768px
+Tablet: de 768px ate 992px
+Desktop: de 1200px - 1440px
+Grandes telas: acima 1600px
     Paleta de cores
     Verde:#49a09d
     Lilas:5f2c82
 */
+
+@media screen and (max-width: 768px) {
+    
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #5f2c82;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#login {
+    display: block;
+    margin: auto;
+    border: 2px solid rgba(0, 0, 0, 0.397);
+    border-radius: 20px;
+    width: 45vw;
+    height: 77vh;
+    background-color: white;
+}
+
+#imagem {
+    background-image: url(../imagens/imagem-fachada.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 35vh;
+    border-radius: 20px 20px 0px 0px;
+}
+
+h1 {
+    text-align: center;
+    padding: 8px 0px 8px 0px;
+    font-size: 1.4em;
+}
+
+p {
+    font-size: 0.8em;
+    padding: 0px 5px 5px 5px;
+}
+
+
+#usuario, #senha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+#icone-user, #icone-senha {
+    background-color: #5f2c82;
+    color: white;
+    border-radius: 5px 0px 0px 5px;
+    padding: 2px;
+}
+
+.area-user, .area-senha {
+    border-radius: 5px;
+    border-color: #5f2c82;
+    width: 32vw;
+    padding: 5px;
+    margin-left: 1px;
+}
+
+#caixa-entrar {
+    background-color: #49a09d;
+    text-align: center;
+    border-radius: 5px;
+    width: 41vw;
+    height: 4vh;
+    padding: 2px;
+    margin: auto;
+    cursor: pointer;
+}
+
+#botao-entrar {
+    display: inline-block;
+    background-color: #49a09d;
+    border: 0px;
+    padding: 5px 14px 0px 14px;
+    color: white;
+}
+
+#esqueci-senha {
+    display: block;
+    background-color: white;
+    border: 1px solid #49a09d;
+    text-align: center;
+    border-radius: 5px;
+    width: 41vw;
+    height: 4vh;
+    padding: 2px;
+    margin: auto;
+    margin-top: 4px;
+    cursor: pointer;
+}
+
+#esqueci-senha > a {
+    display: inline-block;
+    border: 0px;
+    padding: 5px 14px 0px 14px;
+    text-decoration: none;
+    color: #49a09d;
+    font-size: 0.8em;
+}
+
+}
