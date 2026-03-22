@@ -34,8 +34,8 @@ body {
     margin: auto;
     border: 2px solid rgba(0, 0, 0, 0.397);
     border-radius: 20px;
-    width: 45vw;
-    height: 77vh;
+    width: 50vw;
+    height: 81vh;
     background-color: white;
 }
 
@@ -71,13 +71,15 @@ p {
     background-color: #5f2c82;
     color: white;
     border-radius: 5px 0px 0px 5px;
-    padding: 2px;
+    height: 5vh;
+    padding: 5px 5px 0px 5px;
 }
 
 .area-user, .area-senha {
     border-radius: 5px;
     border-color: #5f2c82;
-    width: 32vw;
+    width: 38vw;
+    height: 4vh;
     padding: 5px;
     margin-left: 1px;
 }
@@ -86,8 +88,8 @@ p {
     background-color: #49a09d;
     text-align: center;
     border-radius: 5px;
-    width: 41vw;
-    height: 4vh;
+    width: 47vw;
+    height: 5vh;
     padding: 2px;
     margin: auto;
     cursor: pointer;
@@ -97,7 +99,7 @@ p {
     display: inline-block;
     background-color: #49a09d;
     border: 0px;
-    padding: 5px 14px 0px 14px;
+    padding: 6px 14px 0px 14px;
     color: white;
 }
 
@@ -107,7 +109,7 @@ p {
     border: 1px solid #49a09d;
     text-align: center;
     border-radius: 5px;
-    width: 41vw;
+    width: 47vw;
     height: 4vh;
     padding: 2px;
     margin: auto;
@@ -118,7 +120,7 @@ p {
 #esqueci-senha > a {
     display: inline-block;
     border: 0px;
-    padding: 5px 14px 0px 14px;
+    padding: 1px 14px 0px 14px;
     text-decoration: none;
     color: #49a09d;
     font-size: 0.8em;
