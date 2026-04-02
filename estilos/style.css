@@ -12,13 +12,11 @@ Grandes telas: acima 1600px
     Lilas:5f2c82
 */
 
-@media screen and (max-width: 768px) {
-    
-
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -29,23 +27,35 @@ body {
     align-items: center;
 }
 
+main {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
 #login {
-    display: block;
-    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
     border: 2px solid rgba(0, 0, 0, 0.397);
     border-radius: 20px;
-    width: 70vw;
-    height: 79vh;
+    width: 250px;
+    height: 500px;
     background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
+    overflow: hidden;
+    transition: widh 0.3s, height 0.3s;
 }
 
 #imagem {
+    display: block;
     background-image: url(../imagens/imagem-fachada.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    height: 35vh;
-    border-radius: 20px 20px 0px 0px;
+    height: 200px;
 }
 
 h1 {
@@ -64,43 +74,56 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5px;
+    margin: 5px;
+    background-color: #5f2c82;
+    border: 1px solid #e2dce6;
+    width: 96%;
+    height: 36px;
+    border-radius: 8px;
 }
 
 #icone-user, #icone-senha {
     background-color: #5f2c82;
     color: white;
-    border-radius: 5px 0px 0px 5px;
-    height: 5vh;
-    padding: 5px 5px 0px 5px;
+    border-radius: 8px;
+    height: 31px;
+    padding: 3px 2px 0px 5px;
 }
 
 .area-user, .area-senha {
     border-radius: 5px;
     border-color: #5f2c82;
-    width: 60vw;
-    height: 4vh;
+    width: calc(100% - 34px);
+    height: 100%;
     padding: 5px;
-    margin-left: 1px;
+    transform: translate(2px);
 }
 
 #caixa-entrar {
     background-color: #49a09d;
     text-align: center;
     border-radius: 5px;
-    width: 67vw;
-    height: 5vh;
-    padding: 2px;
+    width: 236px;
+    height: 35px;
     margin: auto;
     cursor: pointer;
 }
 
 #botao-entrar {
-    display: inline-block;
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 35px;
     background-color: #49a09d;
     border: 0px;
-    padding: 6px 14px 0px 14px;
+    padding: 7px 14px;
     color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#botao-entrar:hover {
+    background-color: #204644;
 }
 
 #esqueci-senha {
@@ -109,21 +132,34 @@ p {
     border: 1px solid #49a09d;
     text-align: center;
     border-radius: 5px;
-    width: 66vw;
-    height: 4vh;
+    width: 236px;
+    height: 35px;
     padding: 2px;
     margin: auto;
     margin-top: 4px;
     cursor: pointer;
 }
 
-#esqueci-senha > a {
-    display: inline-block;
-    border: 0px;
-    padding: 1px 14px 0px 14px;
-    text-decoration: none;
-    color: #49a09d;
-    font-size: 0.8em;
+#esqueci-senha:hover {
+    background-color: #204644;
 }
 
+#esqueci-senha > a {
+    display: block;
+    border: 0px;
+    width: 100%;
+    height: 29px;
+    padding-top: 2px;
+    text-decoration: none;
+    color: #49a09d;
+    font-size: 1em;
+}
+
+#esqueci-senha > a:hover {
+    background-color: #204644;
+    color: white;
+}
+
+#esqueci-senha > a > span {
+    font-size: 0.8em;
 }

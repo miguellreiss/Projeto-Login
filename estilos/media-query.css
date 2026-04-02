@@ -1,0 +1,213 @@
+@charset "UTF-8";
+
+/*
+typical devide breakpoints
+Pequenas telas: ate 600px
+Celular: de 600px ate 768px
+Tablet: de 768px ate 992px
+Desktop: de 1200px - 1440px
+Grandes telas: acima 1600px
+    Paleta de cores
+    Verde:#49a09d
+    Lilas:5f2c82
+*/
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+    body {
+        background-image: linear-gradient(to top, #49a09d, #5f2c82);
+    }
+    #login {
+        width: 80vw;
+        height: 300px;
+    }
+    #imagem {
+        float: left;
+        width: 30%;
+        height: 100%;
+        
+    }
+    #formulario {
+        float: right;
+        width: 69%;
+    }
+    h1 {
+        font-size: 2em;
+        text-align: center;
+        margin-bottom: 7px;
+        padding: 8px 0px 0px 0px;
+    }
+    p {
+        display: block;
+        font-size: 1em;
+        margin: 6px 0px;
+    }
+    #usuario, #senha {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 3px;
+        background-color: #5f2c82;
+        border: 1px solid #e2dce6;
+        width: 97%;
+        height: 38px;
+        border-radius: 8px;
+    }
+    #caixa-entrar {
+        background-color: #49a09d;
+        text-align: center;
+        border-radius: 5px;
+        width: 97%;
+        height: 36px;
+        float: left;
+        cursor: pointer;
+        transform: translateX(4px);
+    }
+    #botao-entrar {
+        display: block;
+        font-size: 1em;
+        width: 100%;
+        height: 35px;
+        background-color: #49a09d;
+        border: 0px;
+        padding: 7px 14px;
+        color: white;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    #esqueci-senha {
+        display: block;
+        background-color: white;
+        border: 1px solid #49a09d;
+        color: #49a09d;
+        text-align: center;
+        border-radius: 5px;
+        width: 97%;
+        height: 35px;
+        padding: 2px;
+        float: left;
+        margin-top: 4px;
+        transform: translate(4px, 1px);
+        cursor: pointer;
+    }
+    
+    #esqueci-senha > a {
+        display: block;
+        border: 0px;
+        width: 100%;
+        height: 29px;
+        text-decoration: none;
+        color: #49a09d;
+        font-size: 1em;
+        transform: translateY(2px)
+    }
+    #esqueci-senha > a:hover {
+        color: white;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1440px) {
+    body {
+        background-image: linear-gradient(to top, #49a09d, #5f2c82);
+    }
+    #login {
+        width: 950px;
+        height: 350px;
+    }
+    #imagem {
+        float: right;
+        width: 50%;
+        height: 100%;
+    }
+    #formulario{
+        float: left;
+        width: 50%;
+    }
+    h1 {
+        font-size: 2em;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    p {
+        display: block;
+        font-size: 1em;
+        margin: 20px 0px;
+    }
+    #usuario, #senha {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: 7px;
+    background-color: #5f2c82;
+    border: 1px solid #5f2c82;
+    width: 96%;
+    height: 46px;
+    border-radius: 8px;
+    }
+    #icone-user, #icone-senha {
+    background-color: #5f2c82;
+    color: white;
+    font-size: 1.9em;
+    width: 31px;
+    padding: 5px;
+    }
+    .area-user, .area-senha {
+    font-size: 1em;
+    border-radius: 8px;
+    border-color: #5f2c82;
+    width: calc(100% - 34px);
+    height: 100%;
+    padding: 5px;
+    transform: translate(36px, -39px);
+    }
+    #caixa-entrar {
+        background-color: #49a09d;
+        text-align: center;
+        border-radius: 5px;
+        width: 96%;
+        height: 36px;
+        float: left;
+        cursor: pointer;
+        transform: translateX(7px);
+    }
+    #botao-entrar {
+        display: block;
+        font-size: 1em;
+        width: 100%;
+        height: 35px;
+        background-color: #49a09d;
+        border: 0px;
+        padding: 7px 14px;
+        color: white;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    #esqueci-senha {
+        display: block;
+        background-color: white;
+        border: 1px solid #49a09d;
+        color: #49a09d;
+        text-align: center;
+        border-radius: 5px;
+        width: 96%;
+        height: 35px;
+        padding: 2px;
+        float: left;
+        margin-top: 4px;
+        transform: translate(7px, 1px);
+        cursor: pointer;
+    }
+    
+    #esqueci-senha > a {
+        display: block;
+        border: 0px;
+        width: 100%;
+        height: 29px;
+        text-decoration: none;
+        color: #49a09d;
+        font-size: 1em;
+        transform: translateY(2px)
+    }
+    #esqueci-senha > a:hover {
+        color: white;
+    }
+}

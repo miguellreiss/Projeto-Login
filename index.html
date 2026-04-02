@@ -6,6 +6,7 @@
     <title>Login</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
     <link rel="stylesheet" href="estilos/style.css" media="all">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
 <body>
     <main>
@@ -19,18 +20,18 @@
                     <div id="usuario">
                         <span id="icone-user"
                         class="material-symbols-outlined">person</span>
-                        <input class="area-user" type="text" name="usuario" id="iusuario" required placeholder="Usuário" autocomplete="username">
+                        <input class="area-user" type="email" name="usuario" id="iusuario" required placeholder="Email" autocomplete="email">
                     </div>
                     <div id="senha">
                         <span id="icone-senha"  class="material-symbols-outlined">vpn_key</span>
-                        <input class="area-senha" type="password" name="senha" id="isenha" required placeholder="Senha" autocomplete="password">
+                        <input class="area-senha" type="password" name="senha" id="isenha" required placeholder="Senha" autocomplete="current-password">
                     </div>
 
                     <div id="caixa-entrar">
                         <input id="botao-entrar" type="submit" value="Entrar">
                     </div>
                     <div id="esqueci-senha">
-                        <a href="#">Esqueci a senha&#x2709;</a>
+                        <a href="#">Esqueci a senha <span class="material-symbols-outlined">mail</span></a>
                     </div>
                 </form>
             </div>
